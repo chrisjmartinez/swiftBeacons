@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6DB419B1949297C00346DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB419A1949297C00346DB5 /* AppDelegate.swift */; };
+		A6DB419D1949297C00346DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB419C1949297C00346DB5 /* ViewController.swift */; };
+		A6DB41A01949297C00346DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DB419E1949297C00346DB5 /* Main.storyboard */; };
+		A6DB41A21949297C00346DB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6DB41A11949297C00346DB5 /* Images.xcassets */; };
+		A6DB41AE1949297C00346DB5 /* BlueBeak_AdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB41AD1949297C00346DB5 /* BlueBeak_AdminTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6DB41A81949297C00346DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6DB418D1949297B00346DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6DB41941949297B00346DB5;
+			remoteInfo = "BlueBeak Admin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6DB41951949297C00346DB5 /* BlueBeak Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueBeak Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6DB41991949297C00346DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6DB419A1949297C00346DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6DB419C1949297C00346DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6DB419F1949297C00346DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6DB41A11949297C00346DB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6DB41A71949297C00346DB5 /* BlueBeak AdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BlueBeak AdminTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6DB41AC1949297C00346DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6DB41AD1949297C00346DB5 /* BlueBeak_AdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueBeak_AdminTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6DB41921949297B00346DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DB41A41949297C00346DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6DB418C1949297B00346DB5 = {
+			isa = PBXGroup;
+			children = (
+				A6DB41971949297C00346DB5 /* BlueBeak Admin */,
+				A6DB41AA1949297C00346DB5 /* BlueBeak AdminTests */,
+				A6DB41961949297C00346DB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6DB41961949297C00346DB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB41951949297C00346DB5 /* BlueBeak Admin.app */,
+				A6DB41A71949297C00346DB5 /* BlueBeak AdminTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6DB41971949297C00346DB5 /* BlueBeak Admin */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB419A1949297C00346DB5 /* AppDelegate.swift */,
+				A6DB419C1949297C00346DB5 /* ViewController.swift */,
+				A6DB419E1949297C00346DB5 /* Main.storyboard */,
+				A6DB41A11949297C00346DB5 /* Images.xcassets */,
+				A6DB41981949297C00346DB5 /* Supporting Files */,
+			);
+			path = "BlueBeak Admin";
+			sourceTree = "<group>";
+		};
+		A6DB41981949297C00346DB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB41991949297C00346DB5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6DB41AA1949297C00346DB5 /* BlueBeak AdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB41AD1949297C00346DB5 /* BlueBeak_AdminTests.swift */,
+				A6DB41AB1949297C00346DB5 /* Supporting Files */,
+			);
+			path = "BlueBeak AdminTests";
+			sourceTree = "<group>";
+		};
+		A6DB41AB1949297C00346DB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB41AC1949297C00346DB5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6DB41941949297B00346DB5 /* BlueBeak Admin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6DB41B11949297C00346DB5 /* Build configuration list for PBXNativeTarget "BlueBeak Admin" */;
+			buildPhases = (
+				A6DB41911949297B00346DB5 /* Sources */,
+				A6DB41921949297B00346DB5 /* Frameworks */,
+				A6DB41931949297B00346DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlueBeak Admin";
+			productName = "BlueBeak Admin";
+			productReference = A6DB41951949297C00346DB5 /* BlueBeak Admin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6DB41A61949297C00346DB5 /* BlueBeak AdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6DB41B41949297C00346DB5 /* Build configuration list for PBXNativeTarget "BlueBeak AdminTests" */;
+			buildPhases = (
+				A6DB41A31949297C00346DB5 /* Sources */,
+				A6DB41A41949297C00346DB5 /* Frameworks */,
+				A6DB41A51949297C00346DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6DB41A91949297C00346DB5 /* PBXTargetDependency */,
+			);
+			name = "BlueBeak AdminTests";
+			productName = "BlueBeak AdminTests";
+			productReference = A6DB41A71949297C00346DB5 /* BlueBeak AdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6DB418D1949297B00346DB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Stoked Software, LLC.";
+				TargetAttributes = {
+					A6DB41941949297B00346DB5 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A6DB41A61949297C00346DB5 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A6DB41941949297B00346DB5;
+					};
+				};
+			};
+			buildConfigurationList = A6DB41901949297B00346DB5 /* Build configuration list for PBXProject "BlueBeak Admin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6DB418C1949297B00346DB5;
+			productRefGroup = A6DB41961949297C00346DB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6DB41941949297B00346DB5 /* BlueBeak Admin */,
+				A6DB41A61949297C00346DB5 /* BlueBeak AdminTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6DB41931949297B00346DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DB41A01949297C00346DB5 /* Main.storyboard in Resources */,
+				A6DB41A21949297C00346DB5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DB41A51949297C00346DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6DB41911949297B00346DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DB419D1949297C00346DB5 /* ViewController.swift in Sources */,
+				A6DB419B1949297C00346DB5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DB41A31949297C00346DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DB41AE1949297C00346DB5 /* BlueBeak_AdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6DB41A91949297C00346DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6DB41941949297B00346DB5 /* BlueBeak Admin */;
+			targetProxy = A6DB41A81949297C00346DB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6DB419E1949297C00346DB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6DB419F1949297C00346DB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6DB41AF1949297C00346DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6DB41B01949297C00346DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6DB41B21949297C00346DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "BlueBeak Admin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6DB41B31949297C00346DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "BlueBeak Admin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A6DB41B51949297C00346DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueBeak Admin.app/BlueBeak Admin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlueBeak AdminTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		A6DB41B61949297C00346DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueBeak Admin.app/BlueBeak Admin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlueBeak AdminTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6DB41901949297B00346DB5 /* Build configuration list for PBXProject "BlueBeak Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DB41AF1949297C00346DB5 /* Debug */,
+				A6DB41B01949297C00346DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6DB41B11949297C00346DB5 /* Build configuration list for PBXNativeTarget "BlueBeak Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DB41B21949297C00346DB5 /* Debug */,
+				A6DB41B31949297C00346DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A6DB41B41949297C00346DB5 /* Build configuration list for PBXNativeTarget "BlueBeak AdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DB41B51949297C00346DB5 /* Debug */,
+				A6DB41B61949297C00346DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6DB418D1949297B00346DB5 /* Project object */;
+}
