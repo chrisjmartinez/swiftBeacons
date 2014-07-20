@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A67E8786197C0E4700958AA3 /* BeaconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E8784197C0E4700958AA3 /* BeaconTableViewCell.swift */; };
+		A67E8787197C0E4700958AA3 /* BeaconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A67E8785197C0E4700958AA3 /* BeaconTableViewCell.xib */; };
+		A67E8789197C1EDD00958AA3 /* BeaconSimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E8788197C1EDC00958AA3 /* BeaconSimViewController.swift */; };
+		A6BEAED7197B2BDC00071C66 /* BeaconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BEAED6197B2BDC00071C66 /* BeaconTableViewController.swift */; };
 		A6DB419B1949297C00346DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB419A1949297C00346DB5 /* AppDelegate.swift */; };
 		A6DB419D1949297C00346DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB419C1949297C00346DB5 /* ViewController.swift */; };
 		A6DB41A01949297C00346DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6DB419E1949297C00346DB5 /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A67E8784197C0E4700958AA3 /* BeaconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTableViewCell.swift; sourceTree = "<group>"; };
+		A67E8785197C0E4700958AA3 /* BeaconTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeaconTableViewCell.xib; sourceTree = "<group>"; };
+		A67E8788197C1EDC00958AA3 /* BeaconSimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconSimViewController.swift; sourceTree = "<group>"; };
+		A6BEAED6197B2BDC00071C66 /* BeaconTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTableViewController.swift; sourceTree = "<group>"; };
 		A6DB41951949297C00346DB5 /* BlueBeak Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueBeak Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6DB41991949297C00346DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6DB419A1949297C00346DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				A6DB419A1949297C00346DB5 /* AppDelegate.swift */,
+				A67E8788197C1EDC00958AA3 /* BeaconSimViewController.swift */,
+				A67E8784197C0E4700958AA3 /* BeaconTableViewCell.swift */,
+				A67E8785197C0E4700958AA3 /* BeaconTableViewCell.xib */,
+				A6BEAED6197B2BDC00071C66 /* BeaconTableViewController.swift */,
 				A6DB419C1949297C00346DB5 /* ViewController.swift */,
 				A6DB419E1949297C00346DB5 /* Main.storyboard */,
 				A6DB41A11949297C00346DB5 /* Images.xcassets */,
@@ -190,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6DB41A01949297C00346DB5 /* Main.storyboard in Resources */,
+				A67E8787197C0E4700958AA3 /* BeaconTableViewCell.xib in Resources */,
 				A6DB41A21949297C00346DB5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,7 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6DB419D1949297C00346DB5 /* ViewController.swift in Sources */,
+				A67E8789197C1EDD00958AA3 /* BeaconSimViewController.swift in Sources */,
 				A6DB419B1949297C00346DB5 /* AppDelegate.swift in Sources */,
+				A6BEAED7197B2BDC00071C66 /* BeaconTableViewController.swift in Sources */,
+				A67E8786197C0E4700958AA3 /* BeaconTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +415,7 @@
 				A6DB41B31949297C00346DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6DB41B41949297C00346DB5 /* Build configuration list for PBXNativeTarget "BlueBeak AdminTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +424,7 @@
 				A6DB41B61949297C00346DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
