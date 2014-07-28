@@ -12,10 +12,10 @@ import CoreBluetooth
 
 class BeaconSimViewController: UIViewController, CBPeripheralManagerDelegate {
 
-    @IBOutlet var nameLabel: UILabel
-    @IBOutlet var uuidLabel: UILabel
-    @IBOutlet var majorLabel: UILabel
-    @IBOutlet var minorLabel: UILabel
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var uuidLabel: UILabel!
+    @IBOutlet var majorLabel: UILabel!
+    @IBOutlet var minorLabel: UILabel!
      
     var name : String = ""
     var uuid : String = ""

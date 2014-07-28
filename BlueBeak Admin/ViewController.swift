@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet
-    var pickerView: UIPickerView
+    var pickerView: UIPickerView!
     
     var items: NSArray = NSArray()
     

@@ -10,10 +10,10 @@ import UIKit
 
 class BeaconTableViewCell: UITableViewCell {
 
-    @IBOutlet var name: UILabel
-    @IBOutlet var uuid: UILabel
-    @IBOutlet var major: UILabel
-    @IBOutlet var minor: UILabel
+    @IBOutlet var name: UILabel!
+    @IBOutlet var uuid: UILabel!
+    @IBOutlet var major: UILabel!
+    @IBOutlet var minor: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
