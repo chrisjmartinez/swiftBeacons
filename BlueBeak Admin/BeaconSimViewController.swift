@@ -42,7 +42,7 @@ class BeaconSimViewController: UIViewController, CBPeripheralManagerDelegate {
 
     func animate() {
         let theAnimation = CABasicAnimation(keyPath: "transform")
-        theAnimation.duration = 2
+        theAnimation.duration = 1
         theAnimation.repeatCount=HUGE
         theAnimation.autoreverses=true
         theAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
