@@ -11,16 +11,13 @@ import UIKit
 class BeaconTableViewController: UITableViewController {
 
     var companyID : String = ""
+    var companyName : String = ""
     var items: NSArray = NSArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Beacons for " + self.companyName
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.getBeacons()
         
         var nibName=UINib(nibName: "BeaconTableViewCell", bundle:nil)
@@ -61,19 +58,12 @@ class BeaconTableViewController: UITableViewController {
         
         return cell
     }
-
-    override func tableView(tableView: UITableView!, viewForHeaderInSection section: Int) -> UIView! {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BeaconCell") as BeaconTableViewCell
-        
-        return cell
-    }
     
-    override func tableView(tableView: UITableView!, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
+    override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
+        return "    Name                          UUID                                                                        Major          Minor"
     }
-        
-    override func tableView(tableView:UITableView!, heightForRowAtIndexPath indexPath:NSIndexPath)->CGFloat
-    {
+
+    override func tableView(tableView:UITableView!, heightForRowAtIndexPath indexPath:NSIndexPath)->CGFloat {
         return 50
     }
     

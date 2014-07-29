@@ -28,7 +28,7 @@ class BeaconSimViewController: UIViewController, CBPeripheralManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Transmitting"
         // Do any additional setup after loading the view.
         nameLabel.text = name
         uuidLabel.text = uuid

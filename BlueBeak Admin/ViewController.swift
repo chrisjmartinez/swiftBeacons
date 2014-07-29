@@ -19,6 +19,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.getCompanies()
+        self.title = "Company"
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +41,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         var beaconView = storyboard.instantiateViewControllerWithIdentifier("Beacons") as BeaconTableViewController
         
         beaconView.companyID = companyID
+        beaconView.companyName = self.pickerView(pickerView, titleForRow: row, forComponent: component)
         self.navigationController.pushViewController(beaconView, animated: true)
     }
     
