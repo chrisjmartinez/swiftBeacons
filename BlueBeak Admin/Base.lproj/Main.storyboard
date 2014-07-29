@@ -142,6 +142,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="image" destination="ZDc-kI-bxE" id="fJp-KL-RsM"/>
                         <outlet property="majorLabel" destination="v97-Hz-Sxr" id="jGm-FB-kl7"/>
                         <outlet property="minorLabel" destination="Ybs-tK-KGL" id="KK0-La-bnZ"/>
                         <outlet property="nameLabel" destination="2Uq-YF-Eg5" id="7Ao-mQ-o0H"/>

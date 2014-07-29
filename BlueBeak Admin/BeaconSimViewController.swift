@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 import CoreLocation
 import CoreBluetooth
 
@@ -16,7 +17,8 @@ class BeaconSimViewController: UIViewController, CBPeripheralManagerDelegate {
     @IBOutlet var uuidLabel: UILabel!
     @IBOutlet var majorLabel: UILabel!
     @IBOutlet var minorLabel: UILabel!
-     
+    @IBOutlet var image: UIImageView!
+    
     var name : String = ""
     var uuid : String = ""
     var major : Int = 0
@@ -38,6 +40,17 @@ class BeaconSimViewController: UIViewController, CBPeripheralManagerDelegate {
         minorLabel.text = number.stringValue
     }
 
+    func animate() {
+        let theAnimation = CABasicAnimation(keyPath: "pulse")
+        theAnimation.duration = 0.5
+        theAnimation.repeatCount=HUGE
+        theAnimation.autoreverses=true
+        theAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        theAnimation.fromValue = NSValue(CATransform3D: CATransform3DMakeScale(1, 1, 0))
+        theAnimation.toValue = NSValue(CATransform3D: CATransform3DMakeScale(2, 2, 0))
+        self.image.layer.addAnimation(theAnimation, forKey: "pulse")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,11 +60,12 @@ class BeaconSimViewController: UIViewController, CBPeripheralManagerDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         powerOn()
+        animate()
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        
+        self.image.layer.removeAllAnimations()
         powerOff()
     }
     
