@@ -41,13 +41,13 @@ class BeaconSimViewController: UIViewController, CBPeripheralManagerDelegate {
     }
 
     func animate() {
-        let theAnimation = CABasicAnimation(keyPath: "pulse")
-        theAnimation.duration = 0.5
+        let theAnimation = CABasicAnimation(keyPath: "transform")
+        theAnimation.duration = 2
         theAnimation.repeatCount=HUGE
         theAnimation.autoreverses=true
         theAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         theAnimation.fromValue = NSValue(CATransform3D: CATransform3DMakeScale(1, 1, 0))
-        theAnimation.toValue = NSValue(CATransform3D: CATransform3DMakeScale(2, 2, 0))
+        theAnimation.toValue = NSValue(CATransform3D: CATransform3DMakeScale(0.5, 0.5, 0))
         self.image.layer.addAnimation(theAnimation, forKey: "pulse")
     }
     
