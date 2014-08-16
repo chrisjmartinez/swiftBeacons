@@ -152,7 +152,7 @@ class BeaconTableViewController: UITableViewController {
                         var err: NSError?
                         var json : NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
                         
-                        if(err?) {
+                        if(err != nil) {
                             // If there is an error parsing JSON, print it to the console
                             println("JSON Error \(err!.localizedDescription)")
                         }

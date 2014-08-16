@@ -20,7 +20,11 @@ class BeaconTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    init(style: UITableViewCellStyle, reuseIdentifier: String!) {
+    required init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
         super.init(style: UITableViewCellStyle.Value1, reuseIdentifier: reuseIdentifier)
     }
     
