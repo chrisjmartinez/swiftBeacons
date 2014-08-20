@@ -11,15 +11,14 @@ let triple : Int -> Int = {
     return result
 }
 
-triple(3)
-
-let listOfNumbers = 1..5
-var sum = 9
-for n in listOfNumbers {
-    sum += n
-}
+triple(4)
 
 var j=2
 for var i = 0; i < 5; ++i {
     j * i
 }
+
+let testLabel = UILabel(frame : CGRectMake(0, 0, 120, 40))
+testLabel.text = "Hello, CampIO"
+testLabel.backgroundColor = UIColor(red: 0.9, green: 0.2, blue : 0.2, alpha : 1.0)
+testLabel
