@@ -11,12 +11,14 @@ let triple : Int -> Int = {
     return result
 }
 
-triple(4)
+triple(6)
 
 var j=2
+var k = 0
 for var i = 0; i < 5; ++i {
-    j * i
+    k += j * i
 }
+k
 
 let testLabel = UILabel(frame : CGRectMake(0, 0, 120, 40))
 testLabel.text = "Hello, CampIO"
