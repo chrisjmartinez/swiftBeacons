@@ -32,25 +32,24 @@ class BeaconTableViewController: UITableViewController {
 
     // #pragma mark - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
         return 1
     }
 
-    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
         return self.items.count
     }
 
-    
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell? {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BeaconCell", forIndexPath: indexPath) as BeaconTableViewCell
         let beacon = self.items.objectAtIndex(indexPath.row) as NSDictionary
         // Configure the cell...
-        cell.name.text = beacon["name"] as String
-        cell.uuid.text = beacon["mfg_id"] as String
+        cell.name.text = beacon["name"] as? String
+        cell.uuid.text = beacon["mfg_id"] as? String
         var s = beacon["major"] as NSNumber
         cell.major.text = s.stringValue
         s = beacon["minor"] as NSNumber
@@ -59,17 +58,16 @@ class BeaconTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "    Name                          UUID                                                                        Major          Minor"
     }
 
-    override func tableView(tableView:UITableView!, heightForRowAtIndexPath indexPath:NSIndexPath)->CGFloat {
+    override func tableView(tableView:UITableView, heightForRowAtIndexPath indexPath:NSIndexPath)->CGFloat {
         return 50
     }
     
-    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        var beaconView = storyboard.instantiateViewControllerWithIdentifier("Beacon") as BeaconSimViewController
-        
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var beaconView = storyboard?.instantiateViewControllerWithIdentifier("Beacon") as BeaconSimViewController
         let beacon = self.items.objectAtIndex(indexPath.row) as NSDictionary
         
         beaconView.name = beacon["name"] as String
@@ -77,7 +75,7 @@ class BeaconTableViewController: UITableViewController {
         beaconView.major = beacon["major"] as Int
         beaconView.minor = beacon["minor"] as Int
         
-        self.navigationController.pushViewController(beaconView, animated: true)
+        self.navigationController?.pushViewController(beaconView, animated: true)
     }
     
     /*
@@ -140,7 +138,7 @@ class BeaconTableViewController: UITableViewController {
         
         let task : NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: {(data, response, error) in
             
-            if(error) {
+            if((error) != nil) {
                 // If there is an error in the web request, print it to the console
                 println(error.localizedDescription)
             } else {

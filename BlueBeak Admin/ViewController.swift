@@ -27,22 +27,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // Dispose of any resources that can be recreated.
     }
 
-    func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int {
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView!, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return self.items.count
     }
     
     func pickerView(pickerView: UIPickerView!, didSelectRow row: Int, inComponent component: Int) {
         var dict : NSDictionary = self.items[row] as NSDictionary
         var companyID : String = dict["id"] as String
-        var beaconView = storyboard.instantiateViewControllerWithIdentifier("Beacons") as BeaconTableViewController
+        var beaconView = storyboard?.instantiateViewControllerWithIdentifier("Beacons") as BeaconTableViewController
         
         beaconView.companyID = companyID
         beaconView.companyName = self.pickerView(pickerView, titleForRow: row, forComponent: component)
-        self.navigationController.pushViewController(beaconView, animated: true)
+        self.navigationController?.pushViewController(beaconView, animated: true)
     }
     
     func pickerView(pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String! {
@@ -66,7 +66,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         let task : NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: {(data, response, error) in
             
-            if(error) {
+            if((error) != nil) {
                 // If there is an error in the web request, print it to the console
                 println(error.localizedDescription)
             } else {
